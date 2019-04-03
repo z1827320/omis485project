@@ -1,10 +1,48 @@
+article, aside, figure, figcaption, footer, header, nav, section {
+    display: block;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	padding: 15px 25px;
+}
+
+h1 { 
+	font-size: 150%;
+}
+
 h2 {
-    font-size: 120%;
-    padding: .25em 0 .25em 25px;
-    cursor: pointer;
+	font-size: 120%;
+	padding: .25em 0 .25em 25px;
+	cursor: pointer;
     background: url(images/plus.png) no-repeat left center;
 }
 
 h2.minus {
-    background: url(images/minus.png) no-repeat left center;
+	background: url(images/minus.png) no-repeat left center;
+}
+
+main {
+	display: none;
+}
+
+.open {
+	display: inline;
+}
+
+ul {
+	padding-left: 45px;
+}
+
+li {
+	padding-bottom: .25em;
+}
+
+p {
+	padding-bottom: .25em;
+	padding-left: 25px;
 }
