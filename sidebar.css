@@ -1,0 +1,8 @@
+div .sidebar {
+    float: left;
+    border: 3px solid black;
+}
+
+section .startclasses {
+    text-align: center;
+}
