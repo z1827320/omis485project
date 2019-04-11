@@ -46,3 +46,7 @@ p {
 	padding-bottom: .25em;
 	padding-left: 25px;
 }
+
+div .sidebar {
+	display: none;
+}

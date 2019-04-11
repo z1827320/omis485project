@@ -1,5 +1,6 @@
 window.onload = function () {
-    var school = $("classes");
+	const newLocal = "classes";
+    var school = $(newLocal);
     var h2_elements = school.getElementsByTagName("h2");
     		    
     var headingNode;
