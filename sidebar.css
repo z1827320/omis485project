@@ -1,11 +1,27 @@
 div .sidebar {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
-	width: 650px;
-	margin: 0 auto;
-	border: 3px solid black;
+    float: left;
+    border-top: 3px, solid, black;
+    border-bottom: 3px, solid, black;
+    border-left: 3px, solid, black;
+    border-right: 3px, solid, black;
+
 }
 
-section .startclasses {
-    text-align: center;
+div .startclasses {
+    
+}
+div .secondaryclasses {
+    
+}
+div .supplyclasses {
+    
+}
+div .dataclasses {
+    
+}
+div .infoclasses {
+    
+}
+div .otherclasses {
+    
 }
