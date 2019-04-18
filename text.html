@@ -2,6 +2,7 @@
     <html>
         <head>
             <title>TESTTESTTEST</title>
+            <meta charset="UTF-8">
             <script>
                 window.onload = function () {
 	                var school = $("classes");
@@ -34,6 +35,36 @@
 	                return document.getElementById(id);
                 }
             </script>
+            <script>
+                function myFunction() {
+                    // Get the checkbox
+                    var checkBox = document.getElementById("myCheck");
+                    // Get the output text
+                    var text = document.getElementById("text");
+
+                    // If the checkbox is checked, display the output text
+                    if (checkBox.checked == true){
+                    text.style.color = "green";
+                    }
+                    else {
+                    text.style.color = "red";
+                    }
+                    
+                } 
+                function MyFunction(){
+                var checkBox = document.getElementById("MyCheck");
+                    // Get the output text
+                    var text = document.getElementById("t");
+
+                    // If the checkbox is checked, display the output text
+                    if (checkBox.checked == true){
+                    text.style.color = "green";
+                    }
+                    else {
+                    text.style.color = "red";
+                    }
+                }
+            </script>
             <style>
                 article, aside, figure, figcaption, footer, header, nav, section {
                     display: block;
@@ -53,6 +84,7 @@
 	                padding: .25em 0 .25em 25px;
 	                cursor: pointer;
                     background: url(images/plus.png) no-repeat left center;
+                    color: red;
                 }
                 h2.minus {
 	                background: url(images/minus.png) no-repeat left center;
@@ -80,11 +112,12 @@
         </head>
         <body>
             <div class="sidebar">
-                <input type="checkbox" value="MGMT 335">MGMT 335<br>
+                <input type="checkbox" value="MGMT 335" id="myCheck" onclick="myFunction()">MGMT 335<br>
+                <input type="checkbox" value="FINA 320" id="MyCheck" onclick="MyFunction()">FINA 320<br>
             </div>
             <div id="classes">
                 <section>
-                    <h2>MGMT 335</h2>
+                    <h2 id="text">MGMT 335</h2>
                     <main>
                         <h4>Managing Individuals, Teams, and Organizations</h4>
                         <p>
@@ -98,6 +131,16 @@
                             PRQ: MGMT 333 or UBUS 310 and UBUS 311, or consent of department.
                         </p>
                     </main>
+                    <h2 id="t">FINA 320</h2>
+                	<main>
+                    	<h4>Principles of Finance</h4>
+                    	<p> Principles underlying managerial decisions influenced by capital structure 
+                        	and type of ownership; problems related to sources of financing; the tools 
+                        	of financial analysis and financial management; integration of economic theory and accounting.
+                    	</p>
+                    	<h5> Prerequisites & Notes </h5>
+                    	<p>PRQ: ACCY 206 or ACCY 288, and UBUS 223 or STAT 208 or STAT 301 or STAT 350; and sophomore standing.</p>
+                	</main>
                 </section>
             </div>
         </body>
