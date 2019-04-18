@@ -3,14 +3,15 @@
         <head>
             <title>OMIS Dept. Classes Portfolio Builder</title>
             <meta charset="utf-8">
-			<script src="classes.js"></script>
-            <link rel="stylesheet" href="index.css">
-			<link rel="stylesheet" href="sidebar.css">
+		<script src="classes.js"></script>
+		<script src="checkclick.js"></script>
+            	<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="sidebar.css">
         </head>
         <body>
             <div class="sidebar">
                 <input type="checkbox" value="MKTG 295">MKTG 295<br>
-                <input type="checkbox" value="MGMT 335">MGMT 335<br>
+                <input type="checkbox" id="myMGMT335" onclick="myMGMT335()">MGMT 335<br>
                 <input type="checkbox" value="FINA 320">FINA 320<br>
                 <input type="checkbox" value="OMIS 338">OMIS 338<br>
                 <input type="checkbox" value="OMIS 351">OMIS 351<br>
@@ -40,11 +41,11 @@
             </div>
             <div id="classes">
 				<section>
-                	<h2>MKTG 295</h2>
+                	<h2 id="">MKTG 295</h2>
                 	<main>
                     	<h4>Principles of Marketing</h4>
                 	</main>
-                	<h2>MGMT 335</h2>
+                	<h2 id="335">MGMT 335</h2>
                 	<main>
                     	<h4>Managing Individuals, Teams, and Organizations</h4>
                     	<p>Theories and concepts related to human behavior in organizations at the
