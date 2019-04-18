@@ -19,11 +19,11 @@ h2 {
 	font-size: 120%;
 	padding: .25em 0 .25em 25px;
 	cursor: pointer;
-    background: url(images/plus.png) no-repeat center;
+    
 }
 
 h2.minus {
-	background: url(images/minus.png) no-repeat center;
+	
 }
 
 main {
