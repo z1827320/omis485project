@@ -1,6 +1,6 @@
 window.onload = function () {
-    var school = $("classes");
-    var h2_elements = school.getElementsByTagName("h2");
+	var school = $("classes");
+	var h2_elements = school.getElementsByTagName("h2");
     		    
     var headingNode;
     for (var i = 0; i < h2_elements.length; i++ ) {
@@ -24,7 +24,7 @@ window.onload = function () {
         }
     }
 }
+
 var $ = function (id) {
 	return document.getElementById(id);
 }
-faqs

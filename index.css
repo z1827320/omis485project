@@ -19,11 +19,11 @@ h2 {
 	font-size: 120%;
 	padding: .25em 0 .25em 25px;
 	cursor: pointer;
-    background: url(images/plus.png) no-repeat left center;
+    color: red;
 }
 
 h2.minus {
-	background: url(images/minus.png) no-repeat left center;
+	
 }
 
 main {
@@ -45,4 +45,8 @@ li {
 p {
 	padding-bottom: .25em;
 	padding-left: 25px;
+}
+
+div .sidebar {
+	display: none;
 }
