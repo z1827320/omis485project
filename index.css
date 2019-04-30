@@ -1,52 +1,56 @@
-article, aside, figure, figcaption, footer, header, nav, section {
-    display: block;
+body {
+    font-family:Arial, Helvetica, sans-serif
 }
 
-* {
-	margin: 0;
-	padding: 0;
+.container {
+    border: 1px solid black;
+    width: 60%;
+	margin-left:20%;
+    margin-right:20%;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-section {
-	padding: 15px 25px;
+.box {
+    border:2px solid #000000;
+    height: 30px;
+	cursor:pointer;
+    cursor:hand;
 }
 
-h1 { 
-	font-size: 150%;
+.box:hover {
+	background-color:#e8e8e8;
 }
 
-h2 {
-	font-size: 120%;
-	padding: .25em 0 .25em 25px;
-	cursor: pointer;
-    color: red;
+h4 {
+	margin-left: 200px;
 }
 
-h2.minus {
-	
+.bottomline{
+    border-bottom:4px solid #666666;
 }
 
-main {
-	display: none;
+.arrow {
+    border:0px solid #000000;
 }
 
-.open {
-	display: inline;
+.transcript {
+    position:fixed;
+    top:40%;
+    right:20px;
+    width:220px;
+    border:2px solid #000000;
 }
 
-ul {
-	padding-left: 45px;
+.t_classes {
+    width:100%;
 }
 
-li {
-	padding-bottom: .25em;
+.hidden {
+    display:none;
+
 }
 
-p {
-	padding-bottom: .25em;
-	padding-left: 25px;
-}
-
-div .sidebar {
-	display: none;
+.heading {
+    font-size:14px
 }
