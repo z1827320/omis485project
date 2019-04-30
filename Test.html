@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Test</title>
+            <meta charset="UTF-8">
+            <script>
+                window.onload = function () {
+	                var school = $("classes");
+	                var h2_elements = school.getElementsByTagName("h2");
+    		    
+                    var headingNode;
+                    for (var i = 0; i < h2_elements.length; i++ ) {
+    	                headingNode = h2_elements[i];
+    	
+    	                // Attach event handler
+    	                headingNode.onclick = function () {
+			                var h2 = this;         // h2 is the current headingNode object
+			                if (h2.hasAttribute("class")) {
+				                h2.removeAttribute("class");	
+			                }
+			                else {
+				                h2.setAttribute("class", "minus");
+			                }
+			                if (h2.nextElementSibling.hasAttribute("class")) {
+				                h2.nextElementSibling.removeAttribute("class");
+			                }
+			                else {
+				                h2.nextElementSibling.setAttribute("class", "open");
+			                } 
+                        }
+                    }
+                }
+
+                var $ = function (id) {
+	                return document.getElementById(id);
+                }
+            </script>
+            <script></script>
+            <style>
+            article, aside, figure, figcaption, footer, header, nav, section {
+                display: block;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            section {
+                padding: 15px 25px;
+            }
+            
+            h1 { 
+                font-size: 150%;
+            }
+            
+            h2 {
+                font-size: 120%;
+                padding: .25em 0 .25em 25px;
+                cursor: pointer;
+                color: red;
+            }
+            
+            h2.minus {
+                
+            }
+            
+            main {
+                display: none;
+            }
+            
+            .open {
+                display: inline;
+            }
+            
+            ul {
+                padding-left: 45px;
+            }
+            
+            li {
+                padding-bottom: .25em;
+            }
+            
+            p {
+                padding-bottom: .25em;
+                padding-left: 25px;
+            }
+            
+            div .sidebar {
+                display: none;
+            }
+            </style>
+        </head>
+        <body>
+            <input type="checkbox" id="myMGMT335" onclick="myMGMT335()">MGMT 335<br>
+            <div class="classes">
+                <h2>MGMT 335</h2>
+			        <main>
+			            <h4>Managing Individuals, Teams, and Organizations</h4>
+			            <p>Theories and concepts related to human behavior in organizations at the
+				        individuals, interpersonal, group, and organizational levels. Application
+				        of these theories and concepts to managerial problems and opportunites.
+			            </p>
+			            <h5>Prerequisites & Notes</h5>
+			            <p>A grade of C or better in each of the following: ACCY 206, ACCY 207,
+					    ECON 260, ECON 261, ENGL 203 or ENGL 204, MATH 211 or MATH 229, 
+					    MGMT 217, OMIS 259, PSYC 102, UBUS 100, and UBUS 223; cumulative GPA 
+					    of at least 2.50; 45 or more semester hours; or consent of department.</p>
+                    </main>
+            </div>
+        </body>
+    </html>
