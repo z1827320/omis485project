@@ -128,7 +128,7 @@ function UpdateInformation(id) {
  	var elem = document.getElementById("info_" + id);
     elem.parentNode.removeChild(elem);
 } else {
-	info_html=document.getElementById("supply_classes").innerHTML;
+	info_html=document.getElementById("information_classes").innerHTML;
 	document.getElementById(id).style.background='green';
 	document.getElementById(id).style.color='white';
 	document.getElementById("information_classes").innerHTML=info_html +'<div class="info_t_classes" id="info_' + id +'">'+id+'</div>';
